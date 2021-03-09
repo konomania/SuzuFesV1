@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs="sourceType: webcam;" vr-mode-ui="enabled: false">
+    <a-assets>
+      <img id="all" src="image/all.jpg">
+      <img id="asaka" src="image/asaka.jpg">
+      <img id="asca" src="image/asca.jpg">
+      <img id="atsuko" src="image/atsuko.jpg">
+      <img id="exina" src="image/exina.jpg">
+      <img id="konomi" src="image/konomi.jpg">
+      <img id="mythroid" src="image/mythroid.jpg">
+    </a-assets>
+
+    <a-marker preset="pattern" type="pattern" url="marker/pattern-all.patt">
+      <a-entity rotation="-90 0 0">
+        <a-image src="#all" width="2" height="2"></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="marker/pattern-asaka.patt">
+      <a-entity rotation="-90 0 0">
+        <a-image src="#asaka" width="2" height="2"></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="marker/pattern-asca.patt">
+      <a-entity rotation="-90 0 0">
+        <a-image src="#asca" width="2" height="2"></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="marker/pattern-atsuko.patt">
+      <a-entity rotation="-90 0 0">
+        <a-image src="#atsuko" width="2" height="2"></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="marker/pattern-exina.patt">
+      <a-entity rotation="-90 0 0">
+        <a-image src="#exina" width="2" height="2"></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="marker/pattern-konomi.patt">
+      <a-entity rotation="-90 0 0">
+        <a-image src="#konomi" width="2" height="2"></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="marker/pattern-mythroid.patt">
+      <a-entity rotation="-90 0 0">
+        <a-image src="#mythroid" width="2" height="2"></a-image>
+      </a-entity>
+    </a-marker>
+
+
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
